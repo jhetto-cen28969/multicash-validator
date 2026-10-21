@@ -1,0 +1,104 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.app {
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 0 16px 24px;
+}
+
+h1 {
+  margin: 8px 0 16px;
+}
+
+.upload {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.upload input {
+  display: block;
+  margin-top: 8px;
+}
+
+.meta {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 12px;
+}
+
+.leftPane,
+.rightPane {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 520px;
+}
+
+.leftPane h2,
+.rightPane h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+  max-height: 680px;
+  overflow: auto;
+}
+
+.issues {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.issues li {
+  border: 1px solid #e5e7eb;
+  border-left-width: 6px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.sev-BLOCKER {
+  border-left-color: #dc2626;
+  background: #fef2f2;
+}
+
+.sev-WARNING {
+  border-left-color: #d97706;
+  background: #fffbeb;
+}
+
+.sev-INFO {
+  border-left-color: #2563eb;
+  background: #eff6ff;
+}

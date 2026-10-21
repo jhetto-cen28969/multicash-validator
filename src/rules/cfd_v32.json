@@ -1,0 +1,55 @@
+{
+  "profile": {
+    "id": "CFD_v32",
+    "format": "CFD",
+    "version": "1.0.0",
+    "description": "MultiCash 3.2 - tuzemská platba"
+  },
+  "settings": {
+    "unknownTagSeverity": "WARNING",
+    "allowEncoding": ["utf-8", "windows-1250", "iso-8859-2"]
+  },
+  "rules": [
+    { "id": "DMS.HD.PREFIX_11_FOR_CFD", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.STRUCT.S1_PRESENT", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.STRUCT.S3_PRESENT", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.STRUCT.UNEXPECTED_S0_S4_IN_CFD", "severity": "WARNING", "enabled": true },
+
+    { "id": "DMS.STRUCT.HD_PRESENT", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.COUNT.S1_MATCH_TX", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.SUM.S1_MATCH_KC", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "DMS.FIELD.HD_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.KC_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.UD_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.DI_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.UK_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.AK_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.KI_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.EC_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.ZK_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.FIELD.AV_REQUIRED", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "DMS.FIELD.AK_EMPTY_ALLOWED", "severity": "INFO", "enabled": true },
+    { "id": "DMS.FIELD.AV_EMPTY_ALLOWED", "severity": "INFO", "enabled": true },
+
+    { "id": "DMS.DATE.HD_RRMMDD", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.DATE.HD_NOT_YYYYMMDD", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.KC.AMOUNT_NUMERIC", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.KC.CURRENCY_PRESENT", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.EC.FORMAT_FIXED", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "DMS.ACCOUNT.PAYER_MOD11", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.ACCOUNT.BENEF_MOD11", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.ACCOUNT.PREFIX_MOD11", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.BANKCODE.FORMAT", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "DMS.LENGTH.FIXED_EXACT", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.LENGTH.VAR_MAX", "severity": "BLOCKER", "enabled": true },
+    { "id": "DMS.LENGTH.VAR_TRAILING_SPACES", "severity": "WARNING", "enabled": true },
+    { "id": "DMS.UD.SUB3_MAXLEN", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "DMS.TAG.UNKNOWN", "severity": "WARNING", "enabled": true },
+    { "id": "DMS.ZD_EQUALS_ZK", "severity": "WARNING", "enabled": true }
+  ]
+}

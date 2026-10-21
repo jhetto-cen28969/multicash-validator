@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "id": "CFA_v32",
+    "format": "CFA",
+    "version": "1.0.0",
+    "description": "MultiCash 3.2 - zahraniční platba"
+  },
+  "settings": {
+    "allowEncoding": ["utf-8", "windows-1250", "iso-8859-2", "latin2"]
+  },
+  "rules": [
+    { "id": "CFA.HDR.02_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.03_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.04_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.05_REQUIRED", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.07_REQUIRED", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "CFA.HDR.01_EMPTY_ALLOWED", "severity": "INFO", "enabled": true },
+    { "id": "CFA.HDR.02_FIXED_LEN", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.02_AMOUNT_FORMAT", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.03_FIXED_LEN", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.03_MATCH_COUNT", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.HDR.07_FILENAME_MATCH", "severity": "INFO", "enabled": true },
+
+    { "id": "CFA.SWIFT.BLOCK_SYNTAX", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.SWIFT.32A_FORMAT", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.SWIFT.CCY_CONSISTENCY_32A_52D", "severity": "INFO", "enabled": true },
+    { "id": "CFA.SWIFT.57A_BIC_VALID", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.SWIFT.57D_REQUIRED_NONEMPTY", "severity": "BLOCKER", "enabled": true },
+    { "id": "CFA.SWIFT.59_ACCOUNT_FORMAT", "severity": "BLOCKER", "enabled": true },
+
+    { "id": "CFA.QUALITY.PLACEHOLDER_VALUES", "severity": "WARNING", "enabled": true },
+    { "id": "CFA.QUALITY.TRAILING_SPACES", "severity": "WARNING", "enabled": true },
+    { "id": "CFA.SWIFT.72_MULTILINE_ALLOWED", "severity": "INFO", "enabled": true }
+  ]
+}
